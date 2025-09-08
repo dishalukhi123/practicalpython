@@ -61,6 +61,13 @@ plt.xlabel("Household Income")
 plt.ylabel("Density")
 plt.show()
 
+# # Skewness and Kurtosis
+skewness = skew(df['Household_Income'])
+kurt = kurtosis(df['Household_Income'])
+
+print("\nSkewness of Income:", skewness)
+print("Kurtosis of Income:", kurt)
+
 # -----------------------------
 # Histogram + KDE for Household Income
 # -----------------------------
